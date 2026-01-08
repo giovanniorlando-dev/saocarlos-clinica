@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autorização de Exames - São Carlos Medicina e Segurança do Trabalho</title>
+    <meta name="description" content="Solicite autorização para realização de exames ocupacionais">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="contact-info">
+                        <span><i class="fas fa-phone"></i> (16) 99626-2266</span>
+                        <span><i class="fas fa-map-marker-alt"></i> São Carlos - SP</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <div class="logo">
+                        <a href="index.html" style="text-decoration: none; color: inherit;">
+                            <h1>SÃO CARLOS</h1>
+                            <p>Medicina e Segurança do Trabalho</p>
+                        </a>
+                    </div>
+                    <button class="mobile-menu-toggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">INÍCIO</a></li>
+                        <li><a href="index.html#sobre">SOBRE NÓS</a></li>
+                        <li><a href="index.html#servicos">SERVIÇOS</a></li>
+                        <li><a href="index.html#exames">EXAMES</a></li>
+                        <li><a href="autorizacao-exames.html" class="active">AUTORIZAÇÃO</a></li>
+                        <li><a href="index.html#contato">CONTATO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-clipboard-check"></i> Autorização de Exames</h1>
+            <p>Preencha o formulário abaixo para autorizar a realização de exames ocupacionais</p>
+        </div>
+    </section>
+
+    <!-- Formulário de Autorização de Exames -->
+    <section class="authorization-section">
+        <div class="container">
+            <form id="authorizationForm" class="authorization-form">
+                <div class="form-section">
+                    <h3><i class="fas fa-building"></i> Dados da Empresa</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="auth-empresa">Empresa *</label>
+                            <small class="form-description">Informe a razão social da empresa</small>
+                            <input type="text" id="auth-empresa" name="empresa" placeholder="Digite o nome da empresa" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="auth-cnpj">CNPJ *</label>
+                            <small class="form-description">Digite o CNPJ com números (ex: 12345678000190)</small>
+                            <input type="text" id="auth-cnpj" name="cnpj" placeholder="00.000.000/0000-00" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3><i class="fas fa-user"></i> Dados do Colaborador</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="auth-nome">Nome *</label>
+                            <small class="form-description">Nome completo do colaborador</small>
+                            <input type="text" id="auth-nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="auth-cpf">CPF *</label>
+                            <small class="form-description">Cadastro de Pessoa Física (CPF) do colaborador</small>
+                            <input type="text" id="auth-cpf" name="cpf" required placeholder="000.000.000-00">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="auth-cargo">Cargo/função *</label>
+                            <small class="form-description">Cargo ou função que o colaborador exerce na empresa</small>
+                            <input type="text" id="auth-cargo" name="cargo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="auth-nascimento">Data nascimento * <small>(dia/mês/ano)</small></label>
+                            <small class="form-description">Data de nascimento do colaborador</small>
+                            <input type="date" id="auth-nascimento" name="nascimento" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3><i class="fas fa-stethoscope"></i> Tipo de Exame</h3>
+                    <div class="form-group">
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="tipo-exame" value="Admissional" required>
+                                <span>Admissional</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tipo-exame" value="Periódico">
+                                <span>Periódico</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tipo-exame" value="Retorno ao trabalho">
+                                <span>Retorno ao trabalho</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tipo-exame" value="Mudança de função">
+                                <span>Mudança de função</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="tipo-exame" value="Demissional">
+                                <span>Demissional</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3><i class="fas fa-file-medical"></i> Exames Complementares</h3>
+                    <div class="form-group">
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="exames" value="PCMSO">
+                                <span>PCMSO</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="exames" value="Exame Clínico">
+                                <span>Exame Clínico</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="exames" value="Audiometria">
+                                <span>Audiometria</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="exames" value="Hemograma Completo">
+                                <span>Hemograma Completo</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="exames" value="Espirometria">
+                                <span>Espirometria</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="exames" value="Eletrocardiograma">
+                                <span>Eletrocardiograma</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="exames" value="Eletroencefalograma">
+                                <span>Eletroencefalograma</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="exames" value="Glicemia">
+                                <span>Glicemia</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="exames" value="Acuidade visual">
+                                <span>Acuidade visual</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="exames" value="Raio X Tórax PA">
+                                <span>Raio X Tórax PA</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="exames" value="Raio Lombo Sacra">
+                                <span>Raio Lombo Sacra</span>
+                            </label>
+                        </div>
+                        <small style="color: #999; display: block; margin-top: 15px;"><i class="fas fa-info-circle"></i> Digite em observações se não for nenhum dos citados acima</small>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3><i class="fas fa-comment-alt"></i> Informações Adicionais</h3>
+                    <div class="form-group">
+                        <label for="auth-observacoes">Observações</label>
+                        <textarea id="auth-observacoes" name="observacoes" rows="5" placeholder="Digite aqui caso precise de outros exames não listados acima ou informações adicionais"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="auth-email">E-mail para impressão *</label>
+                        <input type="email" id="auth-email" name="email" required placeholder="seuemail@exemplo.com">
+                        <small style="color: #999; display: block; margin-top: 8px;"><i class="fas fa-envelope"></i> Enviaremos este formulário para o e-mail digitado acima para impressão.</small>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-check-circle"></i> Enviar Autorização
+                    </button>
+                    <button type="reset" class="btn btn-secondary">
+                        <i class="fas fa-redo"></i> Limpar Formulário
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Precisa de Ajuda?</h2>
+                <p>Entre em contato conosco pelo WhatsApp para esclarecer dúvidas sobre a autorização de exames</p>
+                <a href="https://wa.me/5516996262266?text=Olá!%20Preciso%20de%20ajuda%20com%20a%20autorização%20de%20exames." class="btn btn-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>São Carlos Medicina e Segurança do Trabalho</h3>
+                    <p>Especializada em soluções completas para a saúde ocupacional e segurança do trabalho.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="index.html#sobre">Sobre Nós</a></li>
+                        <li><a href="index.html#servicos">Serviços</a></li>
+                        <li><a href="index.html#exames">Exames</a></li>
+                        <li><a href="index.html#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="index.html#servicos">Medicina Ocupacional</a></li>
+                        <li><a href="index.html#servicos">Segurança do Trabalho</a></li>
+                        <li><a href="index.html#servicos">Laudos Técnicos</a></li>
+                        <li><a href="index.html#servicos">Treinamentos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> R. 15 de Novembro, 982<br>São Carlos - SP</li>
+                        <li><i class="fas fa-phone"></i> (16) 99626-2266</li>
+                        <li><i class="fas fa-envelope"></i> contato@saocarlosmedicina.com.br</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 São Carlos Medicina e Segurança do Trabalho. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5516996262266?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script-autorizacao.js"></script>
+</body>
+</html>

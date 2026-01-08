@@ -1,0 +1,25 @@
+INSTRUÇÃO PARA USAR O LOGO:
+
+O logo "São Carlos" foi integrado em dois locais do site:
+
+1. **No Cabeçalho** - Ao lado do nome "SÃO CARLOS"
+2. **Na Seção Sobre Nós** - Substituindo a foto genérica
+
+O arquivo do logo deve ser nomeado como: logo.png
+
+PRÓXIMAS ETAPAS:
+1. Salve a imagem do logo (a que foi enviada) como "logo.png" na pasta do projeto
+2. A pasta deve ter a seguinte estrutura:
+   - index.html
+   - autorizacao-exames.html
+   - logo.png (seu arquivo)
+   - style.css
+   - script.js
+   - script-autorizacao.js
+   - README.md
+
+Após adicionar o arquivo logo.png, o site exibirá:
+- O logo na barra de navegação
+- O logo na seção "Sobre Nós"
+
+Os estilos CSS já foram configurados para exibir o logo de forma profissional!
