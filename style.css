@@ -1365,6 +1365,244 @@ section {
     .exams-list {
         grid-template-columns: 1fr;
     }
+
+    /* Logo responsivo */
+    .logo {
+        gap: 10px;
+    }
+
+    .logo-img {
+        height: 45px;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    .logo p {
+        font-size: 10px;
+    }
+
+    /* Navbar responsivo */
+    .navbar-content {
+        padding: 10px 0;
+    }
+
+    /* Header responsivo */
+    .top-bar {
+        font-size: 12px;
+    }
+
+    .contact-info span {
+        font-size: 11px;
+        margin-right: 10px;
+    }
+
+    .social-links a {
+        margin-left: 10px;
+    }
+
+    /* Hero responsivo */
+    .hero {
+        padding: 50px 0 30px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    /* About responsivo */
+    .about-image {
+        min-height: 300px;
+        padding: 30px 20px;
+    }
+
+    .about-image img {
+        max-width: 250px;
+    }
+
+    /* Info cards responsivo */
+    .info-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Services responsivo */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+
+    /* Contact form responsivo */
+    .quote-form {
+        padding: 20px 0;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    /* Footer responsivo */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-col h3,
+    .footer-col h4 {
+        font-size: 16px;
+    }
+
+    .footer-col p,
+    .footer-col ul li,
+    .footer-col a {
+        font-size: 14px;
+    }
+
+    /* MVV responsivo */
+    .mvv-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .mvv-item {
+        padding: 20px;
+    }
+
+    .mvv-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .mvv-icon i {
+        font-size: 20px;
+    }
+
+    .mvv-item h3 {
+        font-size: 18px;
+    }
+
+    .mvv-item p {
+        font-size: 14px;
+    }
+
+    /* Valores lista responsivo */
+    .valores-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .valores-list li {
+        padding: 20px 15px;
+        border-left-width: 4px;
+    }
+
+    .valores-list li strong {
+        font-size: 14px;
+    }
+
+    .valores-list li span {
+        font-size: 13px;
+    }
+
+    /* CTA responsivo */
+    .cta-orcamento {
+        padding: 40px 0;
+    }
+
+    .cta-orcamento-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cta-text h2 {
+        font-size: 24px;
+    }
+
+    .cta-text p {
+        font-size: 14px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-whatsapp-large,
+    .btn-secondary-large {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    /* Container responsivo */
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Seção header responsivo */
+    .section-header {
+        margin-bottom: 30px;
+    }
+
+    .section-header h2 {
+        font-size: 24px;
+    }
+
+    .divider {
+        width: 60px;
+        height: 4px;
+        margin: 15px auto;
+    }
+
+    .section-header p {
+        font-size: 14px;
+    }
+}
+
+/* Ultra pequenas telas (menos de 320px) */
+@media (max-width: 320px) {
+    .logo h1 {
+        font-size: 16px;
+    }
+
+    .hero-content h2 {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .section-header h2 {
+        font-size: 20px;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
 }
 
 /* Smooth Scrolling */
