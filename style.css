@@ -1330,7 +1330,7 @@ section {
 
     /* Hero responsivo */
     .hero {
-        padding: 50px 0 150px;
+        padding: 50px 0 20px;
         min-height: auto;
     }
 
@@ -1389,6 +1389,11 @@ section {
         max-width: 100%;
         width: 100%;
         padding: 0 20px;
+    }
+
+    .hero-boxes {
+        position: static;
+        bottom: auto;
     }
 
     .hero-box {
@@ -1580,7 +1585,7 @@ section {
     }
 
     .hero {
-        padding: 40px 0 140px;
+        padding: 40px 0 20px;
     }
 
     .hero-content h2 {
@@ -1609,6 +1614,16 @@ section {
         width: 100%;
         max-width: none;
         min-height: 45px;
+    }
+
+    .hero-boxes {
+        position: static;
+        bottom: auto;
+    }
+
+    .hero-boxes-grid {
+        max-width: 100%;
+        width: 100%;
     }
 
     .services-grid,
